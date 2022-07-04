@@ -24,14 +24,30 @@ limitations under the License.
 
 > Test if a value is PRNG-like.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-prng-like
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isPRNGLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-prng-like@deno/mod.js';
+var isPRNGLike = require( '@stdlib/assert-is-prng-like' );
 ```
 
 #### isPRNGLike( value )
@@ -39,7 +55,7 @@ import isPRNGLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-prng-lik
 Tests if a value is PRNG-like.
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
+var randu = require( '@stdlib/random-base-randu' );
 
 var bool = isPRNGLike( randu );
 // returns true
@@ -66,8 +82,8 @@ var bool = isPRNGLike( randu );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import isPRNGLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-prng-like@deno/mod.js';
+var randu = require( '@stdlib/random-base-randu' );
+var isPRNGLike = require( '@stdlib/assert-is-prng-like' );
 
 var bool = isPRNGLike( randu );
 // returns true
@@ -103,7 +119,7 @@ bool = isPRNGLike( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
