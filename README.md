@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isPRNGLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-prng-like@deno/mod.js';
+import isPRNGLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-prng-like@v0.2.2-deno/mod.js';
 ```
 
 #### isPRNGLike( value )
@@ -78,7 +78,7 @@ var bool = isPRNGLike( randu );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import isPRNGLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-prng-like@deno/mod.js';
+import isPRNGLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-prng-like@v0.2.2-deno/mod.js';
 
 var bool = isPRNGLike( randu );
 // returns true
