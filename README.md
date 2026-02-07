@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isPRNGLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-prng-like@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-prng-like/tags). For example,
+
+```javascript
 import isPRNGLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-prng-like@v0.2.3-deno/mod.js';
 ```
 
@@ -78,7 +83,7 @@ var bool = isPRNGLike( randu );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import isPRNGLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-prng-like@v0.2.3-deno/mod.js';
+import isPRNGLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-prng-like@deno/mod.js';
 
 var bool = isPRNGLike( randu );
 // returns true
